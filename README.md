@@ -14,10 +14,10 @@ composer require amidesfahani/filament-tinyeditor
 
 Publish assets
 ```bash
-php artisan vendor:publish --provider="AmidEsfahani\FilamentTinyEditor\TinyeditorServiceProvider"
-php artisan vendor:publish --provider="AmidEsfahani\FilamentTinyEditor\TinyeditorServiceProvider" --tag="config"
-php artisan vendor:publish --provider="AmidEsfahani\FilamentTinyEditor\TinyeditorServiceProvider" --tag="views"
-php artisan vendor:publish --provider="AmidEsfahani\FilamentTinyEditor\TinyeditorServiceProvider" --tag="public"
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider"
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="config"
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="views"
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="public"
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ php artisan vendor:publish --provider="AmidEsfahani\FilamentTinyEditor\Tinyedito
 The editor extends the default Field class so most other methods available on that class can be used when adding it to a form.
 
 ```php
-use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+use RectitudeOpen\FilamentTinyEditor6\TinyEditor;
 
 TinyEditor::make('content')
 	->fileAttachmentsDisk('public')

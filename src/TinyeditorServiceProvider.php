@@ -1,6 +1,6 @@
 <?php
 
-namespace AmidEsfahani\FilamentTinyEditor;
+namespace RectitudeOpen\FilamentTinyEditor6;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Css;
@@ -23,8 +23,7 @@ class TinyeditorServiceProvider extends PackageServiceProvider
 
         if (file_exists(__DIR__ . '/../../../vendor/tinymce/tinymce')) {
             $this->publishes([__DIR__ . '/../../../vendor/tinymce/tinymce' => public_path('vendor/tinymce')], 'public');
-        }
-        else if (file_exists(base_path('vendor/tinymce/tinymce'))) {
+        } elseif (file_exists(base_path('vendor/tinymce/tinymce'))) {
             $this->publishes([base_path('vendor/tinymce/tinymce') => public_path('vendor/tinymce')], 'public');
         }
     }
