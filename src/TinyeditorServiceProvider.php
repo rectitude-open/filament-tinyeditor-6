@@ -104,7 +104,7 @@ class TinyeditorServiceProvider extends PackageServiceProvider
 
         $provider = config('filament-tinyeditor.provider', 'cloud');
 
-        $mainJs = 'https://cdn.jsdelivr.net/npm/tinymce@6.7.1/tinymce.js';
+        $mainJs = 'https://cdn.jsdelivr.net/npm/tinymce@6.8.5/tinymce.min.js';
         if ($provider == 'vendor') {
             $mainJs = asset('vendor/tinymce/tinymce.min.js');
         }
