@@ -2,7 +2,7 @@
 
 A [TinyMCE](https://www.tiny.cloud/) v6 integration for [Filament](https://filamentphp.com/) Forms.
 
-This package is a fork of the [filament-tinyeditor](https://github.com/amidesfahani/filament-tinyeditor) repository (`v1` branch). It uses TinyMCE version 6.8.5, which is the last release under the MIT license. Please note that this version is no longer officially supported by TinyMCE, so be aware of potential security risks when using it.
+This package is a fork of the [filament-tinyeditor](https://github.com/amidesfahani/filament-tinyeditor) repository (`v1` branch). It uses [TinyMCE version 6.8.5](https://www.tiny.cloud/docs/tinymce/6/), which is the last release under the MIT license. Please note that this version is no longer officially supported by TinyMCE, so be aware of potential security risks when using it.
 
 ## Installation
 
@@ -112,6 +112,12 @@ TinyEditor::make('contract')
 	->templates(route('my_template_route_name'))
     ->required();
 ```
+
+## Useful Links
+
+- [Release notes for TinyMCE 6](https://www.tiny.cloud/docs/tinymce/6/release-notes/)
+
+- [Community Discussions and Official Responses on TinyMCE Licensing Issues](https://github.com/tinymce/tinymce/issues/9453)
 
 ## License
 
