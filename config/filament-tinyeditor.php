@@ -1,7 +1,11 @@
 <?php
 
 return [
-    'provider' => 'cloud', // cloud|vendor
+    'provider' => 'cdn', // cdn|asset
+
+    'cdn_path' => 'https://cdn.jsdelivr.net/npm/tinymce@6.8.5/tinymce.min.js',
+    'asset_path' => 'vendor/tinymce/tinymce.min.js',
+
     // 'direction' => 'rtl',
     /**
      * change darkMode: 'auto'|'force'|'class'|'media'|false|'custom'
@@ -16,7 +20,7 @@ return [
         // dark, default, document, tinymce-5, tinymce-5-dark, writer
         'content' => 'default'
     ],
-    
+
     'profiles' => [
         'default' => [
             'plugins' => 'accordion autoresize codesample directionality advlist link image lists preview pagebreak searchreplace wordcount code fullscreen insertdatetime media table emoticons',

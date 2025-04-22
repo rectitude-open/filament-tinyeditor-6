@@ -102,12 +102,13 @@ class TinyeditorServiceProvider extends PackageServiceProvider
             )->loadedOnRequest();
         }
 
-        $provider = config('filament-tinyeditor.provider', 'cloud');
+        $provider = config('filament-tinyeditor.provider', 'cdn');
 
-        $mainJs = 'https://cdn.jsdelivr.net/npm/tinymce@6.8.5/tinymce.min.js';
-        if ($provider == 'vendor') {
-            $mainJs = asset('vendor/tinymce/tinymce.min.js');
-        }
+        $mainJs = match ($provider) {
+            'cdn' => config('filament-tinyeditor.cdn_path', 'https://cdn.jsdelivr.net/npm/tinymce@6.8.5/tinymce.min.js'),
+            'asset' => config('filament-tinyeditor.asset_path', asset('vendor/tinymce/tinymce.min.js')),
+            default => throw new \InvalidArgumentException('Invalid provider specified.'),
+        };
 
         FilamentAsset::register([
             Css::make('tiny-css', __DIR__ . '/../resources/css/style.css'),
