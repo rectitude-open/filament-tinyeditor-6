@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.3.2](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.3.1...v6.3.2) (2025-04-22)
+
+
+### Bug Fixes
+
+* resolve CVE-2024-29881 by setting convert_unsafe_embeds to true ([0793068](https://github.com/rectitude-open/filament-tinyeditor-6/commit/0793068a56af1c1fcb5fd559481af0f6e57e1ef0))
+
 ## [6.3.1](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.3.0...v6.3.1) (2025-04-22)
 
 
