@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.3.0](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.2.1...v6.3.0) (2025-04-22)
+
+
+### Features
+
+* update provider configuration to use 'cdn' and adjust asset loading logic ([5ec0dec](https://github.com/rectitude-open/filament-tinyeditor-6/commit/5ec0dec0ca1f3883fafc7996af3d70ab8035575a))
+
 ## [6.2.1](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.2.0...v6.2.1) (2025-04-22)
 
 
