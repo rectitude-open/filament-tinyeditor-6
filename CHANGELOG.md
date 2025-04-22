@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.3.1](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.3.0...v6.3.1) (2025-04-22)
+
+
+### Bug Fixes
+
+* wrong mainJs path ([f006557](https://github.com/rectitude-open/filament-tinyeditor-6/commit/f0065577fd159cef15023f0842e0dcc2b8b80a17))
+
 ## [6.3.0](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.2.1...v6.3.0) (2025-04-22)
 
 
