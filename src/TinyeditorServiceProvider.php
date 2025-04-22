@@ -106,7 +106,7 @@ class TinyeditorServiceProvider extends PackageServiceProvider
 
         $mainJs = match ($provider) {
             'cdn' => config('filament-tinyeditor.cdn_path', 'https://cdn.jsdelivr.net/npm/tinymce@6.8.5/tinymce.min.js'),
-            'asset' => config('filament-tinyeditor.asset_path', asset('vendor/tinymce/tinymce.min.js')),
+            'asset' => asset(config('filament-tinyeditor.asset_path', 'vendor/tinymce/tinymce.min.js')),
             default => throw new \InvalidArgumentException('Invalid provider specified.'),
         };
 
