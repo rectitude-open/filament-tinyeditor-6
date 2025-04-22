@@ -1,5 +1,12 @@
 # Changelog
 
+## [6.2.1](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.2.0...v6.2.1) (2025-04-22)
+
+
+### Bug Fixes
+
+* update README for clarity and accuracy, including package name and usage instructions ([f19cbb0](https://github.com/rectitude-open/filament-tinyeditor-6/commit/f19cbb0434f7f65553684bfdbe3da21bffb84eec))
+
 ## [6.2.0](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.1.0...v6.2.0) (2025-04-22)
 
 
