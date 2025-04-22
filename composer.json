@@ -2,7 +2,12 @@
     "name": "rectitude-open/filament-tinyeditor-6",
     "description": "Filament TinyMCE Editor v6.8.5 – The final MIT-licensed release",
     "license": "MIT",
-    "keywords": ["laravel", "filament", "tinymce", "editor"],
+    "keywords": [
+        "laravel",
+        "filament",
+        "tinymce",
+        "editor"
+    ],
     "authors": [
         {
             "name": "Amid Esfahani",
