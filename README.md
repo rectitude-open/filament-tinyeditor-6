@@ -4,6 +4,11 @@ A [TinyMCE](https://www.tiny.cloud/) v6 integration for [Filament](https://filam
 
 This package is a fork of the [filament-tinyeditor](https://github.com/amidesfahani/filament-tinyeditor) repository (`v1` branch). It uses [TinyMCE version 6.8.5](https://www.tiny.cloud/docs/tinymce/6/), which is the last release under the MIT license. Please note that this version is no longer officially supported by TinyMCE, so be aware of potential security risks when using it.
 
+## Features
+
+- **TinyMCE 6.8.5**: The last version of TinyMCE under the MIT license.
+- **FIX CVE-2024-29881**: The [CVE-2024-29881](https://github.com/advisories/GHSA-5359-pvf2-pw78) vulnerability was resolved by setting `convert_unsafe_embeds` to true as the default configuration.
+
 ## Installation
 
 Install the package via composer

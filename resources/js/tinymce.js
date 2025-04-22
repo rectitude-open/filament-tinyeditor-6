@@ -116,6 +116,7 @@ export default function tinyeditor({
 				image_advtab: image_advtab,
 				image_description: image_description,
 				image_class_list: image_class_list,
+				convert_unsafe_embeds: true,
 				...custom_configs,
 
 				setup: function (editor) {
