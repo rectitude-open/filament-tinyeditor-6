@@ -1,23 +1,15 @@
-# Filament TineMce Editor
+# Filament TinyMCE Editor 6
 
-A [TineMce](https://www.tiny.cloud/) integration for [Filament](https://filamentphp.com/) Admin/Forms.
+A [TinyMCE](https://www.tiny.cloud/) v6 integration for [Filament](https://filamentphp.com/) Forms.
 
-![tiny-editor](images/filament-tinyeditor.jpg?raw=true)
+This package is a fork of the [filament-tinyeditor](https://github.com/amidesfahani/filament-tinyeditor) repository (`v1` branch). It uses TinyMCE version 6.8.5, which is the last release under the MIT license. Please note that this version is no longer officially supported by TinyMCE, so be aware of potential security risks when using it.
 
 ## Installation
 
 Install the package via composer
 
 ```bash
-composer require amidesfahani/filament-tinyeditor
-```
-
-Publish assets
-```bash
-php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider"
-php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="config"
-php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="views"
-php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="public"
+composer require rectitude-open/filament-tinyeditor-6
 ```
 
 ## Usage
@@ -31,8 +23,7 @@ TinyEditor::make('content')
 	->fileAttachmentsDisk('public')
 	->fileAttachmentsVisibility('public')
 	->fileAttachmentsDirectory('uploads')
-    ->profile('default|simple|full|minimal|none|custom')
-	->rtl() // Set RTL or use ->direction('auto|rtl|ltr')
+    ->profile('default') // default|simple|full|minimal|none|custom
 	->columnSpan('full')
     ->required();
 ```
@@ -45,6 +36,14 @@ The plugin will work without publishing the config, but should you need to chang
 php artisan vendor:publish --tag="filament-tinyeditor-config"
 ```
 
+## Publish assets
+
+```bash
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider"
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="config"
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="views"
+php artisan vendor:publish --provider="RectitudeOpen\FilamentTinyEditor6\TinyeditorServiceProvider" --tag="public"
+```
 
 ### Profiles / Tools
 
@@ -80,7 +79,7 @@ The package comes with 4 profiles (or toolbars) out of the box. You can also use
 
 ### RTL Support
 
-In order for things like text align to work properly with RTL languages you 
+In order for things like text align to work properly with RTL languages you
 can switch the `direction` key in the config to 'rtl'.
 
 ```php
@@ -94,20 +93,25 @@ This is the contents your backend page should return if you specify a URL in the
 
 ```json
 [
-  {"title": "Some title 1", "description": "Some desc 1", "content": "My content"},
-  {"title": "Some title 2", "description": "Some desc 2", "content": "My content"}
+  {
+    "title": "Some title 1",
+    "description": "Some desc 1",
+    "content": "My content"
+  },
+  {
+    "title": "Some title 2",
+    "description": "Some desc 2",
+    "content": "My content"
+  }
 ]
 ```
+
 ```php
 TinyEditor::make('contract')
 	->columnSpan('full')
 	->templates(route('my_template_route_name'))
     ->required();
 ```
-
-## Versioning
-
-This project follow the [Semantic Versioning](https://semver.org/) guidelines.
 
 ## License
 
