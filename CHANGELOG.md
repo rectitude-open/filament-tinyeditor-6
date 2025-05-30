@@ -1,5 +1,13 @@
 # Changelog
 
+## [6.4.0](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.3.2...v6.4.0) (2025-05-30)
+
+
+### Features
+
+* add paste-from-word-plugin ([45c29c8](https://github.com/rectitude-open/filament-tinyeditor-6/commit/45c29c81597f3f4b893c0bd505eaa4d1bcc256c2))
+* remove tinymce from dependency add files to local ([34d3681](https://github.com/rectitude-open/filament-tinyeditor-6/commit/34d36812fce459215c2e69c418b2be6efed2acc3))
+
 ## [6.3.2](https://github.com/rectitude-open/filament-tinyeditor-6/compare/v6.3.1...v6.3.2) (2025-04-22)
 
 
